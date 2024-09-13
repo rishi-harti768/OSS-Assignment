@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100svw;
+    height: 100svh;
+    overflow: hidden;
+}
+
+.root {
+    position: relative;
+    background-color: #242424;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.pricing {
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plan {
+    width: 25%;
+    height: 512px;
+    background-color: #454545;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px #ff9800;
+    transition: transform 256ms ease-in-out, box-shadow 256ms ease-in-out;
+}
+
+.plan:hover {
+    transform: translateX(-8px) translateY(-8px);
+    box-shadow: 4px 4px 0px #ff9800;
+}
+
+.p-head {
+    padding: 16%;
+    color: #ff9800;
+    font-weight: bolder;
+}
+
+.cost {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+.features {
+    flex-grow: 1;
+    padding-inline: 16%;
+    color: white;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn-start {
+    width: max-content;
+    padding: 16px;
+    align-self: center;
+    justify-content: flex-end;
+    font-weight: bolder;
+    margin-block: 16px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 1em;
+    transition: transform 256ms ease-in-out;
+}
+
+.btn-start:hover {
+    transform: scale(1.08);
+}

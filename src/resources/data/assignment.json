@@ -1,0 +1,36 @@
+[
+  {
+    "title": "13 Sept, 2024",
+    "assignments": [
+      {
+        "desc": "Pricing Table",
+        "url": "/assignment/pricingtable/index.html"
+      },
+      {
+        "desc": "Clock",
+        "url": "/assignment/clockdesign/index.html"
+      },
+      {
+        "desc": "Pinterest",
+        "url": "/assignment/pinterest/index.html"
+      }
+    ]
+  },
+  {
+    "title": "17 Sept, 2024",
+    "assignments": [
+      {
+        "desc": "3D Cube",
+        "url": "/assignment/threedcube/index.html"
+      },
+      {
+        "desc": "Geometric Shape",
+        "url": "#"
+      },
+      {
+        "desc": "Product Card",
+        "url": "#"
+      }
+    ]
+  }
+]
