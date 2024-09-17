@@ -1,4 +1,4 @@
-import * as THREE from "../../../node_modules/three/build/three.module.js";
+import * as THREE from "../../../node_modules/three/build/three.module.min.js";
 
 function resizeRendererToDisplaySize(renderer) {
   const canvas = renderer.domElement;
@@ -28,8 +28,14 @@ function main() {
 
   const cube = new THREE.Mesh(
     new THREE.TorusGeometry(1, 0.24, 64, 64),
-    new THREE.MeshPhongMaterial({ color: "#ff9800", shininess: 150 })
+    new THREE.MeshStandardMaterial({
+      color: "#ff9800",
+      roughness: 0,
+      metalness: 0.08, 
+      wireframe: false,
+    })
   );
+  cube.name = "cube";
   cube.rotation.x = 30 * (Math.PI / 180);
   const scene = new THREE.Scene();
   scene.background = new THREE.Color("#242424");
